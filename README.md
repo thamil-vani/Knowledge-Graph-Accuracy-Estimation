@@ -17,10 +17,12 @@ In reproducing the experiment on the limitations of the Wald interval, the resul
 The reproduced experiment compared Wilson and Wald confidence intervals under TWCS (Two-Way Cluster Sampling) and STWCS (Stratified Two-Way Cluster Sampling) across diverse Knowledge Graphs, focusing on coverage probabilities and annotation costs. For DisGeNET TEM with TWCS using Wilson (εₜ = 0.5), the original experiment reported a coverage of 0.95±0.01, while the reproduced results showed 0.93±0.02. Similarly, for STWCS, the original coverage was 0.93±0.02, and the reproduced experiment yielded 0.92±0.02. These minor differences are likely due to the randomness inherent in sampling and clustering methods. Despite these variations, the overall trends and findings closely aligned with the original study.
 
 **Scalability:**
+
+
 ![image](https://github.com/user-attachments/assets/c7102c6e-e4c1-4a2f-b2cb-2845a2de4130)
 
 
-Table 2
+
 ![image](https://github.com/user-attachments/assets/98081bd1-6d78-4dca-b60d-3d57d9cd5c64)
 
 
