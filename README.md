@@ -17,23 +17,11 @@ In reproducing the experiment on the limitations of the Wald interval, the resul
 The reproduced experiment compared Wilson and Wald confidence intervals under TWCS (Two-Way Cluster Sampling) and STWCS (Stratified Two-Way Cluster Sampling) across diverse Knowledge Graphs, focusing on coverage probabilities and annotation costs. For DisGeNET TEM with TWCS using Wilson (εₜ = 0.5), the original experiment reported a coverage of 0.95±0.01, while the reproduced results showed 0.93±0.02. Similarly, for STWCS, the original coverage was 0.93±0.02, and the reproduced experiment yielded 0.92±0.02. These minor differences are likely due to the randomness inherent in sampling and clustering methods. Despite these variations, the overall trends and findings closely aligned with the original study.
 
 **Scalability:**
+![image](https://github.com/user-attachments/assets/c7102c6e-e4c1-4a2f-b2cb-2845a2de4130)
 
-Table 1
-Method	        Coverage
-SRS(WALD)	      0.83 ± 0.02
-SRS(WILSON)	    0.92 ± 0.02
-TWCS(WALD)	    0.82 ± 0.02
-TWCS(WILSON)	  0.92 ± 0.02
-STWCS(WALD)	    0.82 ± 0.02
-STWCS(WILSON)  	0.93 ± 0.02
 
 Table 2
-Method	      Coverage
-SRS(WALD)	    0.83 ± 0.02
-SRS(WILSON)	  0.93 ± 0.02
-TWCS(WALD)	  0.83 ± 0.02
-TWCS(WILSON)	0.93 ± 0.02
-STWCS(WALD)	  0.77 ± 0.02
-STWCS(WILSON)	0.88 ± 0.02
+![image](https://github.com/user-attachments/assets/98081bd1-6d78-4dca-b60d-3d57d9cd5c64)
+
 
 The original experiment tested scalability using SYN 100M, but due to memory constraints, we reproduced the experiment using a smaller synthetic dataset of 1M triples. Results from the reproduced experiment (Table 1) and the original experiment (Table 2) show similar trends. Across all sampling techniques (SRS, TWCS, and STWCS), Wilson intervals consistently provided better coverage than Wald intervals. These findings confirm that the proposed algorithm is scalable, even when applied to smaller datasets, demonstrating its robustness across different scales.
